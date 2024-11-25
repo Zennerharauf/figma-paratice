@@ -1,12 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import logo from "/logo.png"
+
+
 
 export default function Header() {
   return (
     <header className="w-screen max-w-[1170px] h-auto grid grid-cols-1 sm:grid-cols-3 gap-4 mx-auto py-3 relative top-8">
       {/* Logo Section */}
       <div className="flex justify-center sm:justify-start items-center">
-        <Image src="/Logo.png" alt="logo" width={200} height={50} priority />
+        <Image src={logo} alt="logo" width={200} height={50} priority />
       </div>
 
       {/* Navigation Links */}
